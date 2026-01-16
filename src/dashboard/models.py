@@ -14,6 +14,7 @@ class Todo(models.Model):
     catagory = models.ForeignKey(TodoCatagory, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     description = models.TextField(blank=True)
+    complete = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
