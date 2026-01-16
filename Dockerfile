@@ -19,4 +19,6 @@ COPY src/ .
 
 EXPOSE 8000
 
+RUN chmod +x entrypoint.sh
+
 CMD ["./entrypoint.sh"]
